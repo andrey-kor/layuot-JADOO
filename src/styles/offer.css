@@ -1,0 +1,58 @@
+.offer-page{
+    margin: 180px 0 0 0;
+    position: relative;
+}
+
+.offer-page::before{
+    content: url('../img/offer/decor-plus.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.offer-page p{
+    text-align: center;
+}
+
+.offer__cards{
+    margin: 68px auto 0;
+    padding: 91px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer__card{
+    width: 190px;
+    height: 227px;
+    border: 1px solid black;
+    border-radius: 36px;
+    padding: 10px
+}
+
+.offer__card_active{
+    width: 267px;  
+    height: 314px;
+
+}
+
+.card__image{
+    text-align: center;
+}
+
+.card__title{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 29 0 0 0;
+}
+
+.card__description{
+    
+}
+
+.card__description p{
+    font-style: 16px;
+    text-align: center;
+    color: #5E6282;
+}
+
