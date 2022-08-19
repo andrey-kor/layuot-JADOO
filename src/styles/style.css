@@ -2,8 +2,9 @@
 @import url('./main-page.css');
 @import url('./offer.css');
 @import url('./destinations.css');
+@import url('./steps.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 /* font-family: 'Poppins', sans-serif; */
 
 @font-face {
@@ -65,4 +66,11 @@ h2{
 
 .category{
     text-align: center;
+}
+
+@media (max-width: 760px) {
+	h2{
+		font-size: 36px;
+	}
+
 }
