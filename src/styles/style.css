@@ -1,6 +1,7 @@
 @import url('./reset.css');
 @import url('./main-page.css');
 @import url('./offer.css');
+@import url('./destinations.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 /* font-family: 'Poppins', sans-serif; */
@@ -60,4 +61,8 @@ h2{
 	text-align: center;
 	color: #14183E;
 	line-height: 50px;
+}
+
+.category{
+    text-align: center;
 }

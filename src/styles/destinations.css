@@ -1,0 +1,100 @@
+
+.dest-page{
+    margin: 50px 0 0 0;
+    position: relative;
+}
+
+.flying-plane{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transform: rotate(70deg);
+}
+
+.dest__cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.dest__cards::after{
+    content: url('../img/destinations/decor-sriral.png');
+    position: absolute;
+    top: 200px;
+    right: -50px;
+    z-index: -1;
+}
+
+.dest__card{
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 20px 20px 5px rgb(238, 238, 238);
+    margin: 0 10px 0;
+}
+
+.dest__card img{
+    border-radius: inherit;
+}
+
+.card__label{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    padding: 28px 25px 40px 20px;
+    background-color: #fff;
+    border-radius: 0 0 25px 25px;
+}
+
+.card__location-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__place-name{
+
+}
+.card__price{
+    text-align: right;
+}
+
+.card__duration-wrapper{
+    margin: 19px 0 0 0;
+    display: table-cell;
+}
+
+.card__duration-wrapper span{
+    vertical-align: middle;
+}
+.card__duration-wrapper img {
+    vertical-align: middle;
+    margin: 0 17px 0 0;
+}
+
+@media (max-width: 1060px) {
+    .dest__cards{
+        display: block;
+        width: 315px;
+    }
+    .dest__cards::after{
+        display: none;
+    }
+    .flying-plane{
+        display: block;
+        z-index: -1;
+    }
+    
+    .dest__card{
+        margin: 0 0 40px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .flying-plane{
+        display: none;
+    }
+}
