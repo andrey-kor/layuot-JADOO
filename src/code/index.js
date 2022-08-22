@@ -65,11 +65,22 @@ window.addEventListener('scroll', () => {
     const destBottomPosition = window.pageYOffset + destPageElement.getBoundingClientRect().bottom;
     const destHight = destBottomPosition-destTopPosition;
     const clientWidth = document.documentElement.clientWidth;
+    const clientHeight = document.documentElement.clientHeight;
     let pageScroll = scrollY - destTopPosition;
     
     if (pageScroll > 0 && pageScroll < destHight) {
-        planeElement.style.top = pageScroll * 2 + 100 + 'px';
+
+        const kH = pageScroll / clientHeight; // 0...1
+
+        planeElement.style.top = pageScroll + (clientHeight * kH) + (100 * (1-kH)) + 'px';
         planeElement.style.left = ((-(Math.abs((pageScroll/(destHight/4))-1))+1)*clientWidth) + 'px'
+
+        // if ( x <= destHight/2){
+        //     planeElement.style.left = ((2*clientWidth)/destHight) *  x + 'px'
+        // }
+        // else {
+        //     planeElement.style.left = 2*clientWidth * (1-(x/destHight)) + 'px'
+        // }
     
         if (pageScroll > lastPageScroll) {
             scrollDir = 'down';
