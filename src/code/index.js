@@ -108,3 +108,15 @@ window.addEventListener('scroll', () => {
         }
     }
 })
+
+import slides from './slides.js'
+slides();
+
+const feedbackPageStyle = getComputedStyle(document.querySelector('.feedback-page'));
+
+// if display widht < 960px
+if (feedbackPageStyle.display === 'block' ) {
+    const slideButtonsElement = document.querySelector('.feedback-page__button-wrapper');
+    document.querySelector('.feedback-page__slide-column').prepend(slideButtonsElement);
+}
+

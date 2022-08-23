@@ -61,6 +61,14 @@ html {
   img {
     border-style: none;
   }
+  button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
   button,input,optgroup,select,textarea {
     font-family: inherit;
     font-size: 100%;
