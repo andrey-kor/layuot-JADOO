@@ -179,6 +179,7 @@
 @media (max-width: 600px) {
     .feedback-page__slide-column{
         display: block;
+        height: auto;
     }
     .feedback__slides-arrows-wrapper,
     .feedback-page__button-wrapper{
