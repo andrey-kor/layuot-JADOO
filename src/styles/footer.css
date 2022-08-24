@@ -1,0 +1,150 @@
+.footer-page{
+    margin: 120px 0 0 0;
+}
+
+.footer__wrapper{
+    display: flex;
+}
+
+.footer__logo-column{
+    padding: 0 10px 0 0;
+    max-width: 207px;
+}
+
+.logo__link{
+    font-size: 44px;
+    line-height: auto;
+    font-weight: 500;
+    color: #181E4B;
+    margin: 0;
+    transition: .3s;
+}
+
+.logo__link:hover{
+    color: #181E4B;
+}
+
+.logo__text{
+    margin: 19px 0 0 0;
+    font-size: 13px;
+    line-height: 124%;
+    color: #5E6282;
+}
+
+.footer__menu-column{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    max-width: 474px;
+    margin: 0 82px;
+}
+
+.footer__metu-category{
+    margin: 0 10px;
+}
+
+.footer__colunm-head{
+    font-weight: 700;
+    color: #080809;
+    font-size: 21px;
+}
+
+.footer__column-body{
+    margin: 34px 0 0 0;
+}
+
+.footer__column-body a{
+    display: block;
+    margin-bottom: 12px;
+    line-height: 124%;
+}
+
+.footer__icons-wrapper{
+    display: flex;
+}
+
+.footer__icon-wrapper a{
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+
+.footer__icon-wrapper img{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px 0px #0808091e;
+    transition: .2s;
+}
+
+.footer__icon-wrapper img:hover{
+    top: 0px;
+    left: 0px;
+    width: 41px;
+    height: 41px;
+    box-shadow: 0px 10px 20px 0px #0808091e;
+}
+
+.footer__app-link-wrapper p{
+    font-size: 20px;
+    line-height: 125%;
+    font-weight: 500;
+}
+
+.app-link-wrapper a:first-child{
+    margin: 0 5px 0 0;
+}
+
+.footer__post-address{
+    margin: 84px 0 79px 0;
+    text-align: center;
+}
+
+@media (max-width: 1060px) {
+    .footer__menu-column{
+        margin: 0 40px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 960px) {
+    .footer-page{
+        margin: 80px 0 0 0;
+    }
+    .footer__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__logo-column{
+        display: none;
+    }
+    .footer__menu-column{
+        margin: 0;
+        
+    }
+    .footer__media-column{
+        margin: 40px 0 0 0;
+    }
+    .footer__icons-wrapper{
+        margin: 0 0 0 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__app-link-wrapper p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer__colunm-head{
+        font-size: 16px;
+    }
+    .footer__column-body a{
+        font-size: 14px;
+    }
+}
