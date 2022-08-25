@@ -4,7 +4,7 @@ let pos = 0;
 export default function slides() {
     changeActiveButton(0);
 
-    document.querySelector('.feedback-page').addEventListener('click', (event) => {
+    document.querySelector('.feedback-block').addEventListener('click', (event) => {
         if (event.target.closest('.slide-arrow-up')){
             pos = 1;
             movePos(pos);
@@ -13,9 +13,8 @@ export default function slides() {
             pos = -1;
             movePos(pos);
         }
-        else if (event.target.closest('.feedback-page__button-wrapper')){
+        else if (event.target.closest('.feedback-block__button-wrapper')){
             const buttonTargetElem = event.target.lastChild || event.target;
-            console.log(buttonTargetElem);
             const buttonId = buttonTargetElem.id[buttonTargetElem.id.length-1];
             moveSlide(buttonId);
         }

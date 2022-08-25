@@ -4,9 +4,9 @@ const burgerElement = document.querySelector('.menu-burger');
 export default function menuClassic() {
 
     function clickListener (event) {
-        const pageName = event.target.lastElementChild.dataset.pageId;
-        if(pageName) {
-            window.scroll(0, document.querySelector(`#${pageName}-page`).getBoundingClientRect().top);
+        const blockName = event.target.lastElementChild.dataset.blockId;
+        if(blockName) {
+            window.scroll(0, document.querySelector(`#${blockName}-block`).getBoundingClientRect().top);
         } 
     }
 

@@ -13,9 +13,9 @@ export default function menuBurger() {
                 closeMenu();
                 document.removeEventListener('click', clickEvent);
 
-                const pageName = event.target.firstElementChild.dataset.pageId;
-                if(pageName) {
-                    window.scroll(0, document.querySelector(`#${pageName}-page`).getBoundingClientRect().top);
+                const blockName = event.target.firstElementChild.dataset.blockId;
+                if(blockName) {
+                    window.scroll(0, document.querySelector(`#${blockName}-block`).getBoundingClientRect().top);
                 }                
             }
         }

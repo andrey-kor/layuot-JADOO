@@ -1,10 +1,10 @@
-.offer-page{
+.offer-block{
     width: 100%;
     margin: 180px 0 0 0;
     position: relative;
 }
 
-.offer-page::before{
+.offer-block::before{
     content: url('../img/offer/decor-plus.png');
     position: absolute;
     top: 0;
@@ -99,10 +99,10 @@
 }
 
 @media (max-width: 960px) {
-    .offer-page::before{
+    .offer-block::before{
         display: none;
     }
-    .offer-page{
+    .offer-block{
         margin: 50px 0 0 0;
     }
 }

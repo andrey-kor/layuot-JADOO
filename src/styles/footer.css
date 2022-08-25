@@ -1,4 +1,4 @@
-.footer-page{
+.footer-block{
     margin: 120px 0 0 0;
 }
 
@@ -113,7 +113,7 @@
 }
 
 @media (max-width: 960px) {
-    .footer-page{
+    .footer-block{
         margin: 80px 0 0 0;
     }
     .footer__wrapper{

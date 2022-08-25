@@ -1,25 +1,25 @@
-.feedback-page{
+.feedback-block{
     margin: 200px 0 0 0;
     display: flex;
     justify-content: space-between;
 }
 
-.feedback-page__title-column{
+.feedback-block__title-column{
     max-width: 409px;
 }
 
-.feedback-page__title-column p{
+.feedback-block__title-column p{
     text-align: left;
     font-weight: 700;
 }
 
-.feedback-page__title-column h2{
+.feedback-block__title-column h2{
     text-align: left;
     margin: 8px 0 0 0;
     line-height: 70px;
 }
 
-.feedback-page__button-wrapper{
+.feedback-block__button-wrapper{
     margin: 82px 0 0 0;
     width: 87px;
     height: 40px;
@@ -27,7 +27,7 @@
     justify-content: space-between;
 }
 
-.feedback-page__button-wrapper div{
+.feedback-block__button-wrapper div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@
     background-color: #39425D;
 }
 
-.feedback-page__slide-column{
+.feedback-block__slide-column{
     flex-grow: 1;
     padding: 0 0 0 87px;
     display: flex;
@@ -139,31 +139,31 @@
 }
 
 @media (max-width: 960px) {
-    .feedback-page{
+    .feedback-block{
         display: block;
         margin: 100px 0 0 0;
     }
-    .feedback-page__title-column{
+    .feedback-block__title-column{
         margin: 0 auto;
     }
-    .feedback-page__title-column p,
-    .feedback-page__title-column h2{
+    .feedback-block__title-column p,
+    .feedback-block__title-column h2{
         text-align: center;
     }
-    .feedback-page__slide-column{
+    .feedback-block__slide-column{
         margin: 40px 0 0 0;
         justify-content: space-between;
         padding: 0;
         height: 300px;
     }
-    .feedback-page__button-wrapper{
+    .feedback-block__button-wrapper{
         margin: 5px 30px 5px 5px;
         flex-direction: column;
         justify-content: center;
         width: 40px;
         height: 100%;
     }
-    .feedback-page__button-wrapper div{
+    .feedback-block__button-wrapper div{
         height: 35px;
         width: 100%;
     }
@@ -177,12 +177,12 @@
 }
 
 @media (max-width: 600px) {
-    .feedback-page__slide-column{
+    .feedback-block__slide-column{
         display: block;
         height: auto;
     }
     .feedback__slides-arrows-wrapper,
-    .feedback-page__button-wrapper{
+    .feedback-block__button-wrapper{
         display: none;
     }
     .feedback__cards-wrapper{

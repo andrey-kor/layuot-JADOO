@@ -2,14 +2,14 @@ export default function plane() {
     // The plane is visible when 600px < width < 1060px
 
     const planeElement = document.querySelector('.flying-plane');
-    const destPageElement = document.querySelector('.dest-page');
+    const destBlockElement = document.querySelector('.dest-block');
     let lastPageScroll = 0;
     let scrollDir;
 
     window.addEventListener('scroll', () => {
 
-        const destTopPosition = window.pageYOffset + destPageElement.getBoundingClientRect().top;
-        const destBottomPosition = window.pageYOffset + destPageElement.getBoundingClientRect().bottom;
+        const destTopPosition = window.pageYOffset + destBlockElement.getBoundingClientRect().top;
+        const destBottomPosition = window.pageYOffset + destBlockElement.getBoundingClientRect().bottom;
         const destHight = destBottomPosition-destTopPosition;
         const clientWidth = document.documentElement.clientWidth;
         const clientHeight = document.documentElement.clientHeight;
