@@ -6,11 +6,11 @@ export default function menuClassic() {
     function clickListener (event) {
         const blockName = event.target.lastElementChild.dataset.blockId;
         if(blockName) {
-            window.scroll(0, document.querySelector(`#${blockName}-block`).getBoundingClientRect().top);
+            window.scroll(0, document.querySelector(`#${blockName}-block`).getBoundingClientRect().top); console.log('scroll')
         } 
     }
-
-    if (getComputedStyle(burgerElement).display === 'none'){        
+    
+    if (getComputedStyle(burgerElement).display === 'none'){
         headerListElement.addEventListener('click', clickListener)
     }
 }

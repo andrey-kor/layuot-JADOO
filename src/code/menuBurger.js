@@ -1,3 +1,7 @@
+const burgerElement = document.querySelector('.menu-burger');
+const bodyElement =  document.querySelector('body');
+const menuElement = document.querySelector('.header__menu');
+
 export default function menuBurger() {
     burgerElement.addEventListener('click', () => {
         
@@ -13,19 +17,22 @@ export default function menuBurger() {
                 closeMenu();
                 document.removeEventListener('click', clickEvent);
 
-                const blockName = event.target.firstElementChild.dataset.blockId;
+                let blockName;
+                if (event.target.tagName == 'LI'){
+                    blockName = event.target.firstElementChild.dataset.blockId;
+                }
+                else if(event.target.tagName == 'A'){
+                    blockName = event.target.dataset.blockId;
+                }
+                 
                 if(blockName) {
                     window.scroll(0, document.querySelector(`#${blockName}-block`).getBoundingClientRect().top);
                 }                
             }
         }
-        setTimeout(() => document.addEventListener('click', clickEvent), 0)
+        document.addEventListener('click', clickEvent)
     })
 }
-
-const burgerElement = document.querySelector('.menu-burger');
-const bodyElement =  document.querySelector('body');
-const menuElement = document.querySelector('.header__menu');
     
 function closeMenu() {
     if (burgerElement.classList.contains('menu-burger_active')){
