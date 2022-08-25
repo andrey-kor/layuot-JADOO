@@ -112,8 +112,6 @@
     z-index: 1;
 }
 
-
-
 h1{
     margin-bottom: 24px;
     color: #DF6951;
@@ -282,5 +280,11 @@ h1{
         width: 140px;
         height: 50px;
         line-height: 50px;
+        font-size: 0.85em;
+    }
+    .play-demo-button__wrapper{
+        margin: 0 0 0 20px;
+        font-size: 0.85em;
+        line-height: 125%;
     }
 }
