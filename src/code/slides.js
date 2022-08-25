@@ -2,11 +2,9 @@ const slidesArr = document.querySelectorAll('.feedback__slide-wrapper');
 let pos = 0;
 
 export default function slides() {
-
     changeActiveButton(0);
 
     document.querySelector('.feedback-page').addEventListener('click', (event) => {
-    
         if (event.target.closest('.slide-arrow-up')){
             pos = 1;
             movePos(pos);
@@ -27,7 +25,6 @@ export default function slides() {
 
 function changeActiveButton(activeId){
     const buttonArr = document.querySelectorAll('.slide-button');
-
     buttonArr.forEach((button) => {
         if (button.classList.contains('slide-button_active')) button.classList.remove('slide-button_active');
     })
@@ -35,7 +32,6 @@ function changeActiveButton(activeId){
 }
 
 function moveSlide(activeSlide){
-
     slidesArr.forEach((item) => {
         if (item.classList.contains('slide_visible')) item.classList.remove('slide_visible');
         if (item.classList.contains('slide_back')) item.classList.remove('slide_back');

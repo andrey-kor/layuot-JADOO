@@ -28,6 +28,7 @@
 
 html{
     box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -40,6 +41,12 @@ body{
 	color: #5E6282;
 	font-weight: 400;
 	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.body_frozen{
+	overflow-y: hidden;
+	padding-right: 15px;
 }
 
 .content{
